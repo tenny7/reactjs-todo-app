@@ -32,6 +32,7 @@ class App extends Component {
         const todoComponent = this.state.todos.map(dataItem => <TodoItem key={dataItem.id} item={dataItem} handleChange={this.handleChange}/>)
         return (
             <div className="container todo-list">
+                <h1 className="text-center">Ovie Tennyson Todo App</h1>
                 <ListGroup>
                 <ListGroup.Item>{todoComponent}</ListGroup.Item>
                 </ListGroup>
